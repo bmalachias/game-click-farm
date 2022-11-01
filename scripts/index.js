@@ -108,6 +108,8 @@ function startGameWithSound() {
     displayNewImage(game.getImage())
     changeImage()    
     startTimer()
+    btnStartWithSound.setAttribute('disabled', true)
+    btnStartWithoutSound.setAttribute('disabled', true)
     if(audioActive === true) {
         bgAudio.play()
         bgAudio.volume = .2
