@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Click Farm</title>
+</head>
+<body>
+    <div class="container">
+        <h1>CLICK FARM</h1>
+        <div class="instructions">
+            <div>
+                <p>Click as many times as you can on the button corresponding to the animal that is being shown. Every click on the correct button you get +10 points!</p>
+            </div>
+            <div>
+                <p>But be careful! Every time you click on the wrong button, you lose 20 points. Good luck!</p>
+            </div>
+        </div>
+        <div class="game-over-message">
+            <p>GAME OVER!</p>
+            <p>YOUR SCORE: <span>0</span></p>
+        </div>
+        <div class="menu-buttons">
+            <button id="start-with-sound">Start With Sound</button>
+            <button id="start-without-sound">Start With No Sound</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="score-time">
+            <div class="score">
+                <p>Score: <span>0</span></p>
+            </div>
+            <div id="timer">Time Left: 00:15</div>
+        </div>
+        <div class="image-area">
+            <img src="./images/white.jpg" id="img">
+
+        </div>
+        <div class="game-buttons1">
+            <button class="choice-button" id="horse" disabled>Horse</button>
+            <button class="choice-button" id="cow" disabled>Cow</button>
+            <button class="choice-button" id="dog" disabled>Dog</button>
+            <button class="choice-button" id="cat" disabled>Cat</button>
+
+        </div>
+        <div class="game-buttons2">
+            <button class="choice-button" id="chicken" disabled>Chicken</button>
+            <button class="choice-button" id="pig" disabled>Pig</button>
+            <button class="choice-button" id="duck" disabled>Duck</button>
+            <button class="choice-button" id="rabbit" disabled>Rabbit</button>
+        </div>
+        <footer>
+            <p id="credits"><a href="./credits.html">credits</a></p>
+        </footer>
+    </div>
+    <audio id="background-sound" class="bg-audio-active" loop="true" src="./sounds/bbc_unidentifi_nhu0505815.mp3"></audio>
+    <script src="./scripts/game.js"></script>
+    <script src="./scripts/index.js"></script>
+    </body>
+</html>
