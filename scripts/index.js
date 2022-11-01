@@ -121,6 +121,8 @@ function startGameWithoutSound() {
     displayNewImage(game.getImage())
     changeImage()    
     startTimer()
+    btnStartWithSound.setAttribute('disabled', true)
+    btnStartWithoutSound.setAttribute('disabled', true)
 
 }
 
